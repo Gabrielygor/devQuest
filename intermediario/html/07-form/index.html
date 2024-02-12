@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body style="background-color: gray;">
+
+    <h1>
+        Forms
+    </h1>
+
+
+    <h3>
+        Metodo GET
+    </h3>
+    <form action="index.html" method="get">
+
+        <label for="name">Digite seu nome:</label>
+        <input type="text" name="name" id="name" placeholder="Nome">
+
+        <button>
+            enviar
+        </button>
+
+    </form>
+
+
+    <h3>
+        Metodo POST
+    </h3>
+    <form action="index.html" method="post">
+
+        <label for="name">Digite seu nome:</label>
+        <input type="text" name="name" id="name" placeholder="Nome">
+
+        <button>
+            enviar
+        </button>
+
+    </form>
+
+    <h3>
+        Formulario de Login
+    </h3>
+
+    <form action="index.html" method="get">
+
+        <input type="text" name="name" id="name" placeholder="Nome"> <br>
+
+        <input type="text" name="sobrename" id="sobrename" placeholder="Sobrename"> <br>
+
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Email ou Telefone"> <br>
+
+        <input type="password" name="senha" id="senha" placeholder="senha"> <br>
+
+        <br>
+
+        <label for="">Data de Nascimento</label> <br>
+        <select name="dia" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <select name="mes" id="">
+            <option value="jan">Jan</option>
+            <option value="fev">Fev</option>
+            <option value="mar">Mar</option>
+            <option value="abri">Abri</option>
+            <option value="mai">Mai</option>
+        </select>
+
+        <select name="ano" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> 
+
+        <br><br>
+
+        <label for="">Genero</label> <br>
+        
+
+        <label for="f">F</label>
+        <input type="radio" name="genero" id="f" value="F">
+        
+        <label for="m">M</label>
+        <input type="radio" name="genero" id="m" value="M">
+
+        <label for="outro">other</label>
+        <input type="radio" name="genero" id="outro" value="other">
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
