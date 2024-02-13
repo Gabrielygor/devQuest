@@ -1,0 +1,10 @@
+body {
+    background-color: gray;
+}
+
+img {
+    /* box-shadow: 15px 5px 5px red; */
+    filter: drop-shadow(15px 51px 51px black);
+    width: 8rem;
+    margin: 0px 0px 0px 30px;
+}
