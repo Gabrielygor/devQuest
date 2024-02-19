@@ -1,0 +1,43 @@
+
+
+.container {
+    display: flex;
+    max-width: 400px;
+    border: 1px solid black;
+}
+
+.item {
+    background-color: gray;
+    font-size: 2rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.justify-content .item1,
+.justify-content .item3 {
+    width: 80px;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-btw {
+    justify-content: space-between;
+}
+
+.flex-arr {
+    justify-content: space-around;
+}
+
+.flex-ev {
+    justify-content: space-evenly;
+}
