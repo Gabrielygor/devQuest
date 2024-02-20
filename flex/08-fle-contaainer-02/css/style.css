@@ -13,3 +13,11 @@
 .grow-3 {
     flex-grow: 3;
 }
+
+.basis-auto {
+    flex-basis: auto;
+}
+
+.basis-0 {
+    flex-basis: 0;
+}
