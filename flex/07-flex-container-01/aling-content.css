@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    max-width: px;
+    border: 1px solid black;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: gray;
+    font-size: 2rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.justify-content .item1,
+.justify-content .item3 {
+    width: 80px;
+}
+
+.flex-start .item,
+.flex-end .item,
+.center .item,
+.stretch .item {
+    flex: 1;
+}
+
+
+.flex-start {
+    align-content: flex-start;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+.flex-center {
+    align-content: center;
+}
+
+.flex-stretch {
+    align-content: stretch;
+}
