@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    max-width: 500px;
+    border: 1px solid black;
+    height: 300px;
+}
+
+.item {
+    background-color: gray;
+    font-size: 2rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.justify-content .item1,
+.justify-content .item3 {
+    width: 80px;
+}
+
+.flex-0 {
+    flex: 0;
+}
