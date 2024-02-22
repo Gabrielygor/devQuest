@@ -1,0 +1,30 @@
+body {
+    background-color: gray;
+}
+
+.flex {
+    display: flex;
+    width: 960px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex img {
+    max-width: 100%;
+}
+
+.coluna {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 250px;
+}
+
+.botao {
+    align-self: flex-start;
+    margin-top: auto;
+    padding-left: 35%;
+}
