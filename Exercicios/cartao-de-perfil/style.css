@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{  
+    --background-color: rgb(25, 162, 174);
+    --text-color: hsl(227, 10%, 46%);
+    --card-color: hsl(0, 0%, 59%);
+}
+
+
+body {
+    font-size: 18px;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(25, 162, 174);
+}
+
+hr {
+    width: 100%;
+    color: black;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 25px;
+    margin: 20px;
+    width: 330px;
+    height: 350px;
+    background-color: white;
+}
+
+.card .informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.card .informacoes img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.card .nunbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+    gap: 40px;
+}
+
+
+
+
+
