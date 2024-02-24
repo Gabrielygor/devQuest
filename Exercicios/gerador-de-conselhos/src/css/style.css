@@ -1,7 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
+:root {
+    --text-color: hsl(193, 38%, 86%);
+    --advice-dice-color: hsl(150, 100%, 66%);
+    --advice-card-color: hsl(217, 19%, 24%);
+    --background-color: hsl(218, 23%, 16%);
+    --hover-color: #53FFAB;
+}
 
 body {
-    background-color: gray;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    height: 100vh;
+}
+
+.advice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--advice-card-color);
+
+    border-radius: 10px;
+    margin: 20px;
+    width: 345px;
+}
+
+.advice:hover {
+    box-shadow: 0px 5px 5px 5px #bdb3b334;
+}
+
+.advice .advice-id {
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.advice .advice-description {
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+.advice .advice-update {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-radius: none;
+    text-align: center;
+    background-color: var(--advice-dice-color);
+    transform: translateY(50%);
+}
+
+.advice .advice-update:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
 }
