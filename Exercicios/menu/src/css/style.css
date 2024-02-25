@@ -1,6 +1,7 @@
 
 body {
     background-color: gray;
+    font-weight: 700;
 }
 
 .header {
@@ -8,23 +9,52 @@ body {
 }
 
 .navegation-bar {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     text-align: center;
 
 }
 
-.logo a{
+.logo{
     display: flex;
     justify-content: space-between;
     gap: 6px;
-    background-color: rgba(0, 0, 0, 0.475);
+}
+
+.logo-img {
+    margin-left: 45px;
+
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
 }
 
 .menu-itens ul {
     display: flex;
+    align-items: center;
     gap: 30px;
     margin: 59px 10px;
-    
+}
+
+.menu-destaque {
+    width: 55px;
+    height: 40px;
+    background-color: #5BC241;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastre-se {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 45px;
+    background-color: #5BC241;
+    width: 127px;
+    height: 39px;
 }
