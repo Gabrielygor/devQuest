@@ -1,0 +1,30 @@
+
+body {
+    background-color: gray;
+}
+
+.header {
+    max-width: 100%;
+}
+
+.navegation-bar {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.logo a{
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    background-color: rgba(0, 0, 0, 0.475);
+}
+
+.menu-itens ul {
+    display: flex;
+    gap: 30px;
+    margin: 59px 10px;
+    
+}
