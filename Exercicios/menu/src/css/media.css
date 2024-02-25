@@ -1,7 +1,19 @@
-@media (max-width: 1000px) {
+@media (max-width: 840px) {
     
     body {
         background-color: black;
     }
 
+
+    .header{
+        flex-direction: column;
+    }
+
+    .navegation-bar {
+        flex-direction: column;
+    }
+
+    .menu-itens ul {
+        flex-direction: column;
+    }
 }
