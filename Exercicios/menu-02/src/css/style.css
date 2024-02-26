@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;   
+    font-weight: 400;
+    background-color: gray;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem;
+}
+
+.logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: .5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 2rem;
+}
+
+.menu li a:hover {
+    background-color: #5BC241;
+    color: #fff;
+}
+
+.menu li a.btn {
+    background-color: #5BC241;
+    border-radius: 1rem;
+    color: #fff;
+    margin-left: 3rem;
+    padding: 10px 20px;
+}
+
+
+@media(max-width:850px) {
+    body{
+        background-color: black;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    .menu{
+        flex-direction:column;
+        margin-top: 5rem;
+    }
+
+    .menu li {
+        padding: 3.3rem 0;
+        font-size: 4rem;
+    }
+
+    .menu li:last-child {
+        margin-top: 2rem;
+    }
+
+    .menu li a {
+        padding: 17px 40px;
+    }
+
+    .menu li a.btn {
+        font-size: 1.8rem;
+        padding: 15px 23px;
+    }
+
+}
