@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img {
+    width: 335px;
+    height: 430px;
+    margin-left: 20px;
+}
+
+@media(max-width:1500px) {
+
+    body{
+        background-color: gray;
+    }
+
+    main {
+        flex-direction:column ;
+    }
+
+}
