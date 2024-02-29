@@ -1,0 +1,40 @@
+.cabecalho {
+    background-color: aquamarine;
+    grid-area: cabecalho;
+
+}
+
+.menu {
+    background-color: blue;
+    grid-area: menu;
+}
+
+.secao-principal {
+    background-color: hotpink;
+    grid-area: principal;
+}
+
+.aside {
+    background-color: crimson;
+    grid-area: aside;
+}
+
+.rodape {
+    background-color: chartreuse;
+    grid-area: rodape;
+}
+
+.container {
+    display: grid;
+    /* grid-template-areas: "cabecalho cabecalho cabecalho"
+        "menu principal aside"
+        "rodape rodape rodape"; */
+
+    grid:
+        "cabecalho cabecalho cabecalho" 200px
+        "menu principal aside" 1000px
+        "rodape rodape rodape" 200px;
+
+
+
+}
