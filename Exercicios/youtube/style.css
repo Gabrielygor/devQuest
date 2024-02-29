@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.656);
+    max-width: 900px;
+    display: grid;
+    grid-template-areas:
+        "video-destaque propaganda"
+        "video-destaque sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+
+    gap: 25px;
+    padding: 40px;
+
+}
+
+.video-destaque {
+    grid-area: video-destaque;
+    background-color: aqua;
+}   
+
+.propaganda {
+    grid-area: propaganda;
+    background-color: rgb(255, 0, 0);
+}
+
+.sugeridos {
+    grid-area: sugeridos;
+    background-color: greenyellow;
+}
+
+.sugeridos .video {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.sugeridos .video .titulo {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sugeridos .video p {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
