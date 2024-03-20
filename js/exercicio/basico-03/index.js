@@ -1,6 +1,6 @@
 
 
-let resposta = confirm("Deseja passa a noite??")
+const resposta = confirm("Deseja passa a noite??")
 
 
 if (resposta == false) { //Confere se ele clickou no nao
