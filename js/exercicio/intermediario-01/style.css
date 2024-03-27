@@ -15,10 +15,19 @@ body {
 body .container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.631);
 
-    height: 60%;
+    height: 60vh;
     width: 300px;
     margin-left: 14rem;
-    padding: 2REM;
+    padding: 2rem;
+
+    color: black;
+}
+
+
+body .btn-saiba-mais {
+    cursor: pointer;
+    color: red;
+    background-color: black;
 }
