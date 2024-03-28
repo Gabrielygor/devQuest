@@ -4,36 +4,37 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    transition: all .5s ease-in-out;
 }
 
 .image {
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 body .container {
-    background-color: rgb(60, 255, 0);
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.cabecalho{
+
+body .secao {
+    width: 600px;
+    padding: 20px;
+    border-radius: 1.5rem;
+    background-color: rgb(110, 109, 109);
+}
+
+.cabecalho {
     display: flex;
     justify-content: space-between;
 }
 
-body .secao {
-    
-    width: 600px;
-    padding: 20px;
-    background-color: rgb(110, 109, 109);
-}
-
-.plus{
+.plus {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    cursor: pointer;
 }
 
 .escondido {
