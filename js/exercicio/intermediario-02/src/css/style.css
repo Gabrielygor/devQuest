@@ -1,0 +1,45 @@
+main {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.image {
+    background-color: black;
+}
+
+body .container {
+    background-color: rgb(60, 255, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+body .secao {
+    
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(110, 109, 109);
+}
+
+.plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.escondido {
+    display: none;
+}
+
+.aparecendo {
+    display: block;
+}
