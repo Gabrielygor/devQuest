@@ -1,5 +1,10 @@
 
+const botoes = document.querySelectorAll(".botao")
+const conteudos = document.querySelectorAll(".conteudo")
 
-const conteudo = document.querySelector(".conteudo")
-
-console.log(conteudo);
+botoes.forEach((botao , index) => {
+    botao.addEventListener("click", () => {
+        conteudos[index].classList.toggle("escondido"); 
+        botao.classList.toggle("branco")
+    });
+});
