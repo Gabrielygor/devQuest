@@ -1,15 +1,6 @@
-let ordens = [
-    { nome: 'Roberto' , tipo: 'compra' , quantidade: 12},
-    { nome: 'Alberto' , tipo: 'compra' , quantidade: 12},
-    { nome: 'Joberto' , tipo: 'venda' , quantidade: 12},
-];
+const imprimirInformacoesPessoa = (primeiroNome, ultimoNome, idade) => {
+    return `Primeiro nome: ${primeiroNome}, Nome do meio: ${ultimoNome} , Idade: ${idade}.`;
+};
 
-
-let quantidadeDeOrdens = ordens.reduce(function(quantidadeDeOrdens, ordem) {
-
-    return quantidadeDeOrdens + ordem.quantidade;
-});
-
-
-console.table(quantidadeDeOrdens)
-
+// console.log(imprimirInformacoesPessoa("Gabriel", "Canuto", 20));
+console.log(`${imprimirInformacoesPessoa("Gabriel", "Canuto", 20)}`);
