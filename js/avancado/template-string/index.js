@@ -3,4 +3,4 @@ const imprimirInformacoesPessoa = (primeiroNome, ultimoNome, idade) => {
 };
 
 // console.log(imprimirInformacoesPessoa("Gabriel", "Canuto", 20));
-console.log(`${imprimirInformacoesPessoa("Gabriel", "Canuto", 20)}`);
+console.log(`${imprimirInformacoesPessoa("Gabriel", "Canuto", 20)}`);//
