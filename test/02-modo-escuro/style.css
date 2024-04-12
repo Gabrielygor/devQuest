@@ -37,6 +37,21 @@ header {
     width: 100px;
 }
 
+.image {
+    height: 50px;
+}
+
+.aparecendo {
+    display: block;
+}
+
+.escondido {
+    display: none;
+}
+
+.aparecendoo {
+    display: block;
+}
 
 /* main */
 
@@ -74,6 +89,8 @@ header {
 }
 
 .image img {
+    
+    height: 100%;
     border-radius: 50%;
     border: 2px solid transparent;
 }
