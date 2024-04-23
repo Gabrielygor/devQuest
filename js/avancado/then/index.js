@@ -2,7 +2,7 @@
 
 
 let chaleiraEstaNoFogao = true
-let fogaoEstaLigado = true
+let fogaoEstaLigado = a
 
 
 let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaLigado) => {
