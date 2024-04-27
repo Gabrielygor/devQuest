@@ -22,7 +22,13 @@ body {
 }
 
 .title {
-    color: black;
+    font-size: 50px;
+    font-weight: 900;
+    background-image: url("image/naipess.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .paragrafo {
