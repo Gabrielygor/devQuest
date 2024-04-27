@@ -1,0 +1,66 @@
+*{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    height: 90vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(96, 137, 213);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.title {
+    color: black;
+}
+
+.paragrafo {
+    color: black;
+}
+
+.api-link {
+    color: rgb(0, 0, 0);
+}
+
+.api-link:hover{
+    text-decoration: underline;
+    color: gold;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.btn-card {
+    background-color: rgb(38, 0, 255);
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    color: black;
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+.btn-card:hover {
+
+    border:2px solid white;
+    color: white;
+    background-color: black;
+    transition: ease-in-out .3s;
+
+}
