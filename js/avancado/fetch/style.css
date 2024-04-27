@@ -1,17 +1,17 @@
-*{
+* {
     text-decoration: none;
     color: white;
 }
 
 body {
     height: 90vh;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(96, 137, 213);
+    background-color: rgb(2, 30, 82);
 }
 
 .container {
@@ -32,20 +32,20 @@ body {
 }
 
 .paragrafo {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 .api-link {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
-.api-link:hover{
+.api-link:hover {
     text-decoration: underline;
     color: gold;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -65,9 +65,46 @@ body {
 
 .btn-card:hover {
 
-    border:2px solid white;
+    border: 2px solid white;
     color: white;
     background-color: black;
     transition: ease-in-out .3s;
 
+}
+
+
+@media (max-width: 700px) {
+
+    html {
+        background-color: darkblue;
+        height: 100vh;
+    }
+
+    body {
+        background-color: darkblue;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+    html {
+        background-color: rgb(40, 40, 212);
+        height: 100vh;
+    }
+
+    body {
+        background-color: rgb(40, 40, 212);
+    }
+
+    .title {
+        font-size: 2rem;
+    }
 }
