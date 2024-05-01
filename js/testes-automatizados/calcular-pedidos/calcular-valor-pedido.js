@@ -22,6 +22,4 @@ const calcularValorTotalDoPedido = pedido => {
     } else {
         return valorProdutos + valorEntrega; // Adicionando o valor da entrega ao total, se necessário
     }
-}
-
-console.log(calcularValorTotalDoPedido(meuPedido));
+} 
