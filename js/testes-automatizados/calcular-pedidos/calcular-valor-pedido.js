@@ -1,12 +1,6 @@
 
 
-const meuPedido = {
-    itens: [
-        { nome: 'Poção do Amor', valor: 100 },
-        { nome: 'Espada de Prata', valor: 50 },
-        { nome: 'Entrega', valor: 40, entrega: true }
-    ]
-};
+
 
 const calcularValorTotalDoPedido = pedido => {
     const valorProdutos = pedido.itens
@@ -23,3 +17,6 @@ const calcularValorTotalDoPedido = pedido => {
         return valorProdutos + valorEntrega; // Adicionando o valor da entrega ao total, se necessário
     }
 } 
+
+
+module.exports = calcularValorTotalDoPedido
