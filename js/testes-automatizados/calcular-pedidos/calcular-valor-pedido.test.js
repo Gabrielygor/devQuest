@@ -52,10 +52,26 @@ it('Deve cobra o valor quando o valor do carrinho for 500', ()=> {
 });
 
 
-it('Adicione 20% caso a entrega seja para RS ou SC', ()=> {
+it('Adicione 20% caso a entrega seja para RS', ()=> {
 
     const pedidoComEstado = {
         estado: 'RS',
+        itens: [
+            { nome: 'Poção do Amor', valor: 500 },
+            { nome: 'Entrega', valor: 100, entrega: true }
+        ]
+    };
+
+    const resultado = calcularValorTotalDoPedido(pedidoComEstado);
+
+    expect(resultado).toBe(620);
+
+});
+
+it('Adicione 20% caso a entrega seja para SC', ()=> {
+
+    const pedidoComEstado = {
+        estado: 'SC',
         itens: [
             { nome: 'Poção do Amor', valor: 500 },
             { nome: 'Entrega', valor: 100, entrega: true }
