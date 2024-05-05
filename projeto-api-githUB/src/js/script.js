@@ -8,7 +8,7 @@ import { screen } from "./objects/screen.js";
 document.getElementById('btn-search').addEventListener('click', () => {
 
     const userName = document.getElementById('input-search').value;
-    getUserProfile(userName);
+    getUserData(userName);
 
 });
 
@@ -24,30 +24,15 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
 });
 
 
-async function getUserProfile(userName) {
+async function getUserData(userName) {
 
     const userResponse = await getUser(userName) 
+    const repositoriesResponse = await getRepos(userName)
+
     user.setInfor(userResponse)
+    user.setRepos(repositoriesResponse)
+
     screen.renderUser(user)
-
 };
 
-function getUserRepositories(userName) {
 
-    getRepos(userName).then(reposData => {
-        let respositoriesItens = ""
-
-        reposData.forEach(repo => {
-            respositoriesItens += `<li> <a href="${repo.html_url}" target="_blank"> ${repo.name} </a> </li>`
-        })
-
-        document.querySelector('.profile-data').innerHTML += `
-            
-        <div class="repositories section">
-            <h2> Repositórios</h2>
-            <ul> ${respositoriesItens}  </ul>
-        </div>
-        `
-
-    });
-};
