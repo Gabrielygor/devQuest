@@ -28,7 +28,12 @@ const screen = {
             
             `
         }
+    },
+
+    renderNotFound() {
+        this.userProfile.innerHTML = "<h3>Usuário não encontrado. Por favor, digite novamente.</h3>"
     }
+
 };
 
 
