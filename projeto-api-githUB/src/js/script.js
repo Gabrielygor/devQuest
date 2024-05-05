@@ -1,7 +1,8 @@
-import { user } from "./services/user.js"
-import { repos } from "./services/repos.js";
+import { getUser } from "./services/user.js"
+import { getRepos } from "./services/repos.js";
 
-
+import { user } from "./objects/user.js"
+import { screen } from "./objects/screen.js";
 
 
 document.getElementById('btn-search').addEventListener('click', () => {
@@ -23,29 +24,17 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
 });
 
 
-function getUserProfile(userName) {
+async function getUserProfile(userName) {
 
-    user(userName).then((userData) => {
-        let userInfo = `
-        
-        <div class="info">
-            <img src="${userData.avatar_url}" alt="Foto de perfil do Usuárioi">
-            <div class="data">
-                <h1>${userData.name ?? 'Não possue nome cadastrada'}</h1>
-                <p>${userData.bio ?? 'O usuário não possui bios cadastrada'}
-            </div> 
-        </div>`
-        document.querySelector('.profile-data').innerHTML = userInfo
-
-        getUserRepositories(userName)
-
-    });
+    const userResponse = await getUser(userName) 
+    user.setInfor(userResponse)
+    screen.renderUser(user)
 
 };
 
 function getUserRepositories(userName) {
 
-    repos(userName).then(reposData => {
+    getRepos(userName).then(reposData => {
         let respositoriesItens = ""
 
         reposData.forEach(repo => {
