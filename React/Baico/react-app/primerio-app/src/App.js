@@ -1,12 +1,21 @@
 //import logo from './logo.svg';
 import './App.css';
 import Button from './components/button/button'
+import Card from './components/card/Card';
 
 function App() {
   return (
-    <Button>  
-      
-    </Button>
+    <>
+      <Button>
+
+      </Button>
+
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+    </>
   );
 }
 
