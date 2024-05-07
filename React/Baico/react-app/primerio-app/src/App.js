@@ -6,18 +6,15 @@ import Card from './components/card/Card';
 function App() {
   return (
     <>
-      <Button>
+      <Button label="Baixar curriculo"></Button>
+      <Button></Button>
 
-      </Button>
 
       <Card>
         <h3> Titulo Card 1</h3>
         <p> Conteudo Card 1</p>
       </Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+
     </>
   );
 }
