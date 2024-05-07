@@ -8,7 +8,7 @@ const Button = (props) => {
 
 };
 
-Button.defaultProsps = {
+Button.defaultProps = {
     label:'Clique aqui'
 }
 
