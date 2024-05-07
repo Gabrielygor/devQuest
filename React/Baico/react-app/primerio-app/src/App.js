@@ -10,8 +10,8 @@ function App() {
 
       </Button>
 
-      <Card></Card>
-      <Card></Card>
+      <Card title="Titulo Do Card 1" p="TESTANDO SO NO CARD 1"></Card>
+      <Card title="TItulo Do Card 2 'd'"></Card>
       <Card></Card>
       <Card></Card>
       <Card></Card>
