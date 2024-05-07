@@ -20,7 +20,7 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
 
     if (isEnterKEyPressed) {
         if(validateEmptyInput(userName)) return
-        getUserProfile(userName)
+        getUserData(userName)
     }
 });
 
