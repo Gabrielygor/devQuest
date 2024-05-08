@@ -1,5 +1,7 @@
 import Card from "../card/Card";
 
+const cardsTitles = ['Titulo Card 1', 'Titulo Card 2', 'Titulo Card 3'];
+
 const Cards = (props) => {
     return (
         <div>
@@ -8,25 +10,15 @@ const Cards = (props) => {
 
             <div>
 
-                <Card>
-                    <h3> Titulo Card 1</h3>
-                    <p> Conteudo Card 1</p>
-                </Card>
-
-                <Card>
-                    <h3> Titulo Card 2</h3>
-                    <p> Conteudo Card 2</p>
-                </Card>
-
-                <Card>
-                    <h3> Titulo Card 3</h3>
-                    <p> Conteudo Card 3</p>
-                </Card>
-
-
+                {cardsTitles.map((cardsTitles, index) => {
+                    return (
+                        <Card key={index} >
+                            <h3>{cardsTitles}</h3>
+                        </Card>
+                    )
+                })}
 
             </div>
-
         </div>
     )
 };

@@ -6,11 +6,9 @@ import Cards from './components/cards/Cards';
 
 function App() {
   return (
-    <>
       <Cards>
 
       </Cards>
-    </>
   );
 }
 
